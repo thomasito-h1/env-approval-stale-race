@@ -1,0 +1,8 @@
+name: env-race-test
+on: workflow_dispatch
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production-race
+    steps:
+      - run: echo "DEPLOYED - this ran using an approval"
